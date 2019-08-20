@@ -10,8 +10,8 @@ source:
   sha256: a609e07295d16455d40df94ddd61b3d476606f5d44e3352103776e3ecbff185a
 
 build:
-  number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 1
+  script: "rm -r -f $SP_DIR/tests && {{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
@@ -45,3 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - TeejIBM
+    - SabaKauser
