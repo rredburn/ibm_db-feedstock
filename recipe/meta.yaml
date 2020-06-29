@@ -1,5 +1,5 @@
 {% set name = "ibm_db" %}
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a609e07295d16455d40df94ddd61b3d476606f5d44e3352103776e3ecbff185a
+  sha256: e3cde9b1400478a9e5d2405840f3a6e7fad3f9f3e6ec68814c4302027e8e97e2
 
 build:
-  number: 1
-  script: "rm -r -f ${SP_DIR}/tests && {{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: rm -r -f ${SP_DIR}/tests && {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -34,7 +34,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Python DBI driver for DB2 (LUW, zOS, i5) and IDS'
+  summary: Python DBI driver for DB2 (LUW, zOS, i5) and IDS
 
   description: |
     This extension is the implementation of Python Database API Specification v2.0
