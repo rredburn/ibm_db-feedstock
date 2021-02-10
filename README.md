@@ -198,6 +198,5 @@ Feedstock Maintainers
 =====================
 
 * [@SabaKauser](https://github.com/SabaKauser/)
-* [@TeejIBM](https://github.com/TeejIBM/)
 * [@xhochy](https://github.com/xhochy/)
 
