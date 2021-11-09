@@ -31,7 +31,7 @@ BUILD_CMD=mambabuild
 arch=`uname -m`
 
 if [ $arch == "ppc64le" ];then
-	yum install numactl-devel -y
+	sudo yum install numactl-devel -y
 fi
 
 conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip ${GET_BOA:-} -c conda-forge
