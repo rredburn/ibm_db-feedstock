@@ -18,7 +18,6 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - sysroot_linux-64 2.17  # [linux64]
-    - {{ cdt('numactl-devel') }}  # [ppc64le]
   host:
     - python
     - pip
@@ -28,6 +27,7 @@ requirements:
     - python
     - setuptools
     - libxml2
+    - {{ cdt('numactl-devel') }}  # [ppc64le]
 
 test:
   imports:
